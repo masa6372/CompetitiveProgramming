@@ -12,8 +12,8 @@ public:
                 tmp++;
                 i++;
             }
-            res.append(tmp + "0");
-            res += s[i-1];
+            res += (tmp + '0');
+            res += s[i];
         }
         return res;
     }
