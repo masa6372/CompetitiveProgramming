@@ -21,16 +21,16 @@ public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
         ListNode* res = new ListNode(0);
         res->next = head;
-        ListNode* first;
-        ListNode* second;
-        first = head, second = head;
-        for (int i=0; i<n; i++) {
-            first->next;
+        ListNode* first = res;
+        ListNode* second = res;
+        for (int i=0; i<=n; i++) {
+            first = first->next;
         }
         while (first != nullptr) {
-            first->next;
-            second->next;
+            first = first->next;
+            second = second->next;
         }
-        second->next->next;
+        second->next = second->next->next;
+        return res->next;
     }
 };
